@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="efddf3e7-377f-4551-9568-5862deaf4c51" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://wsteste.devedp.com.br/Master/CidadeServico.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CidadeServico.xsd" MetadataType="Schema" ID="8f53833b-067b-4cd9-a414-f055f5f278fa" SourceId="1" SourceUrl="http://wsteste.devedp.com.br/Master/CidadeServico.svc?xsd=xsd0" />
+    <MetadataFile FileName="CidadeServico.wsdl" MetadataType="Wsdl" ID="65f4f855-f3e3-4361-a1cd-079cca7b3acf" SourceId="1" SourceUrl="http://wsteste.devedp.com.br/Master/CidadeServico.svc?wsdl" />
+    <MetadataFile FileName="CidadeServico1.xsd" MetadataType="Schema" ID="064e2d02-cf15-4b13-abe5-f77155a0a832" SourceId="1" SourceUrl="http://wsteste.devedp.com.br/Master/CidadeServico.svc?xsd=xsd2" />
+    <MetadataFile FileName="CidadeServico2.xsd" MetadataType="Schema" ID="d1ca8e71-f6e4-4f54-ade4-50470d0c6fab" SourceId="1" SourceUrl="http://wsteste.devedp.com.br/Master/CidadeServico.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,42 @@
+﻿@model Presentation.Models.PontuacaoCidadeModel
+@{
+    ViewBag.Title = "Pontuação de Cidade";
+}
+
+@using (Html.BeginForm("BuscarCidade", "Home", FormMethod.Post))
+{
+    <div class="form-group">
+        @Html.LabelFor(model => model.NomeCidade, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.NomeCidade, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
+    </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Estado, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Estado, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Buscar" class="btn btn-default" />
+            </div>
+        </div>
+
+}
+@foreach (var item in Model.Cidades)
+{
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Estado)
+        </td>
+        <td>
+            <button type="button" onclick="alert('A pontuação da Cidade @item.Nome é @item.Pontuacao')">Ver Pontuação</button>
+        </td>
+    </tr>
+}
